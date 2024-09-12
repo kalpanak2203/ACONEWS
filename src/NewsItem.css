@@ -1,4 +1,3 @@
-/* NewsItem.css */
 .news-card {
     background-color: #fff;
     border-radius: 10px;
@@ -29,6 +28,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #00c3ff;
   }
   
   .news-description {

@@ -1,8 +1,7 @@
 // Footer.js
 import React from 'react';
-import './Footer.css';
+import './Footer.css'; // Ensure this file has the latest styles
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
 
 const Footer = () => {
   return (
@@ -26,10 +25,18 @@ const Footer = () => {
         <div className="footer-section social">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="https://www.facebook.com/acowale" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
-            <a href="https://x.com/acowale" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/acowalelimited/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/acowale/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/acowale" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://x.com/acowale" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/acowalelimited/" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/acowale/" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin-in"></i>
+            </a>
           </div>
         </div>
       </div>
