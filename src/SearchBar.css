@@ -102,22 +102,22 @@
 @media (max-width: 480px) {
   .search-bar {
     flex-direction: column; /* Stack items vertically */
-    align-items: stretch;
+    align-items: center;
   }
 
   .search-input {
     width: 100%;
-    border-radius: 30px; /* Fully rounded */
+    border-radius: 25px; /* Fully rounded */
     padding: 12px;
     font-size: 14px;
   }
 
   .search-button {
-    width: 100%;
-    margin-top: 10px; /* Add some space between input and button */
+    width: 50%;
+    margin-top: 5px; /* Add some space between input and button */
     border-radius: 30px;
-    padding: 12px;
+    padding: 10px;
     font-size: 14px;
-    display: block; /* Stack it under the input */
+    display: flex; /* Stack it under the input */
   }
 }
