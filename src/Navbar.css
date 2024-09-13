@@ -226,7 +226,8 @@ body, html {
   }
 
   .navbar-links.active {
-    width: 80vw; /* Adjusted for small mobile screens */
+    width: 50vw; 
+    height: 60vw;
   }
 
   .hamburger .bar {
