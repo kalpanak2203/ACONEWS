@@ -11,13 +11,13 @@ body {
 /* Gradient animation for background */
 @keyframes gradientAnimation {
   0% {
-    background: linear-gradient(to right, #7090c2, #c3cfe2);
+    background: linear-gradient(to right, #ffffff, #c3cfe2);
   }
   50% {
-    background: linear-gradient(to right, #7090c2, #f5f7fa);
+    background: linear-gradient(to right, #ffffff, #c3cfe2);
   }
   100% {
-    background: linear-gradient(to right, #7090c2, #c3cfe2);
+    background: linear-gradient(to right, #ffffff, #c3cfe2);
   }
 }
 
