@@ -2,92 +2,88 @@
 .filters {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px; /* Reduced gap to fit filters in one line */
   margin-bottom: 30px;
   flex-wrap: wrap; /* Allows wrapping on larger screens */
+  overflow-x: auto; /* Ensure horizontal scroll if necessary on smaller screens */
 }
 
+/* Styling for individual filter groups */
 .filter-group {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, #ff6f61, #ffcccb); /* Add a vibrant gradient background */
-  border-radius: 10px; /* Rounded corners for modern look */
-  padding: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
-  width: 200px; /* Adjust width for a better fit */
+  background: linear-gradient(135deg, #ff6f61, #ffcccb);
+  border-radius: 10px;
+  padding: 10px; /* Reduced padding for smaller size */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  min-width: 120px; /* Reduced width to fit more filters in one line */
 }
 
 .filter-group:hover {
-  background: linear-gradient(135deg, #ffcccb, #ff6f61); /* Reverse gradient on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  background: linear-gradient(135deg, #ffcccb, #ff6f61);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .filter-group label {
-  margin-bottom: 8px;
-  font-size: 16px;
+  margin-bottom: 6px;
+  font-size: 14px; /* Slightly smaller text size */
   font-weight: bold;
-  color: #333; /* Darker color for better readability */
+  color: #333;
 }
 
 .filter-select {
   width: 100%;
-  max-width: 200px; /* Ensure it doesn't exceed max-width */
-  padding: 10px;
+  padding: 8px; /* Reduced padding for smaller size */
   border: 2px solid #ccc;
   border-radius: 5px;
-  font-size: 14px;
-  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for focus state */
+  font-size: 12px; /* Reduced font size to fit smaller layout */
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .filter-select:focus {
   outline: none;
   border-color: #00bcd4;
-  box-shadow: 0 0 5px rgba(0, 188, 212, 0.5); /* Subtle shadow on focus */
+  box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
 }
 
 .filter-select:hover {
   border-color: #008ba3;
 }
 
-/* Responsive Design */
-
 /* Mobile screens */
 @media (max-width: 480px) {
   .filters {
-    flex-direction: row; /* Align filters horizontally */
-    flex-wrap: nowrap; /* Prevent wrapping to the next line */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
-    gap: 10px; /* Adjust gap for smaller screens */
+    flex-direction: row;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 10px; /* Adjust gap for small screens */
   }
 
   .filter-group {
-    width: auto; /* Allow filter groups to be flexible */
-    min-width: 120px; /* Minimum width to fit smaller screens */
-    margin: 0; /* Remove bottom margin to align horizontally */
-    padding: 10px;
+    min-width: 100px; /* Reduced minimum width for smaller screens */
+    padding: 8px; /* Reduced padding */
   }
 
   .filter-select {
-    font-size: 12px;
-    padding: 8px;
+    font-size: 10px; /* Smaller font size */
+    padding: 6px; /* Reduced padding */
   }
 }
 
 /* Tablet screens */
 @media (max-width: 768px) {
   .filters {
-    flex-direction: row; /* Align filters horizontally on tablets */
+    flex-direction: row;
     flex-wrap: wrap; /* Allow wrapping if necessary */
   }
 
   .filter-group {
-    width: auto; /* Flexible width for tablets */
-    min-width: 150px; /* Adjust minimum width for tablets */
+    min-width: 130px; /* Adjusted width for tablets */
   }
 
   .filter-select {
-    font-size: 13px; /* Slightly larger font size for tablets */
+    font-size: 12px;
   }
 }
