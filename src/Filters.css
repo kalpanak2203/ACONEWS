@@ -66,6 +66,8 @@
   .filter-group {
     min-width: 50px; /* Reduced minimum width for smaller screens */
     padding: 7px; /* Reduced padding */
+    padding-left: 0px;
+    padding-right: 0px;
     min-height: 30px;
     font-size: 10px;
   }
@@ -73,7 +75,7 @@
   .filter-select {
     font-size: 10px; /* Smaller font size */
     padding: 5px; /* Reduced padding */
-    width: 50px;
+    width: 70px;
   }
 }
 
