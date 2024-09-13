@@ -3,7 +3,7 @@ body, html {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
-  width: 100%; /* Ensure full width */
+  width: 100%; 
 }
 
 /* Main Navbar */
@@ -14,7 +14,7 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(175, 95, 129);
+  background-color: rgb(240, 108, 163);
   padding: 15px 20px;
   z-index: 1000;
   transition: background-color 0.5s ease, padding 0.5s ease;
@@ -62,7 +62,6 @@ body, html {
   transform-origin: bottom left;
 }
 
-/* Navbar links */
 .navbar-links {
   display: flex;
   gap: 20px;
@@ -104,7 +103,7 @@ body, html {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #d12087;
+  background-color: #069425;
   visibility: hidden;
   transition: width 0.3s ease-in-out;
 }
@@ -115,8 +114,9 @@ body, html {
 }
 
 .navbar-links ul li a:hover {
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
-  color: transparent;
+  /* background: linear-gradient(90deg, #00c6ff, #0072ff); */
+  color: rgb(235, 3, 3);
+
   background-clip: text;
   -webkit-background-clip: text;
   transform: scale(1.1);

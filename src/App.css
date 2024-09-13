@@ -2,24 +2,24 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* Light, calming gradient */
+  background: linear-gradient(to right, #ffffff, #d0e6e3, #a0c9c5);
   animation: gradientAnimation 15s ease infinite; /* Animated gradient background */
   color: #333;
   overflow-x: hidden;
 }
 
-/* Gradient animation for background */
+/* Gradient animation for background
 @keyframes gradientAnimation {
   0% {
-    background: linear-gradient(to right, #ffffff, #c3cfe2);
+    background: linear-gradient(to right, #ffffff, #92c0bc);
   }
   50% {
-    background: linear-gradient(to right, #ffffff, #c3cfe2);
+    background: linear-gradient(to right, #ffffff, #92c0bc);
   }
   100% {
-    background: linear-gradient(to right, #ffffff, #c3cfe2);
+    background: linear-gradient(to right, #ffffff, #92c0bc);
   }
-}
+} */
 
 /* Main app container */
 .app {

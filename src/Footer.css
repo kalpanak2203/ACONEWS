@@ -1,6 +1,6 @@
 .footer {
   /* background: linear-gradient(90deg, #f35353, #ffb36d); */
-  background-color: black;
+  background-color: rgb(29, 28, 28);
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -74,7 +74,7 @@
 }
 
 .footer-section ul li a:hover {
-  color: #ff5733; /* More vibrant hover color */
+  color: #05800f; /* More vibrant hover color */
 }
 
 .social-icons {
