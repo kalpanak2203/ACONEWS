@@ -15,12 +15,12 @@ body, html {
   background: linear-gradient(90deg, #ff5f6d, #ffc371);
   padding: 15px 20px;
   z-index: 1000;
-  transition: background-color 0.5s ease, padding 0.5s ease; /* Smooth transition for background and padding */
+  transition: background-color 0.5s ease, padding 0.5s ease;
   overflow: hidden;
 }
 
 .navbar.scrolled {
-  background: linear-gradient(90deg, #ff6f61, #ffb36d); /* Darker gradient on scroll */
+  background: linear-gradient(90deg, #ff6f61, #ffb36d);
   padding: 10px 20px;
 }
 
@@ -41,7 +41,9 @@ body, html {
   gap: 20px;
   max-width: calc(100% - 200px);
   flex-wrap: wrap;
-  transition: max-width 0.5s ease; /* Smooth width adjustment on resize */
+  transition: max-width 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .navbar-links ul {
@@ -61,7 +63,25 @@ body, html {
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth hover transitions */
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links ul li a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #d12087;
+  visibility: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-links ul li a:hover::before {
+  visibility: visible;
+  width: 100%;
 }
 
 .navbar-links ul li a:hover {
@@ -69,7 +89,7 @@ body, html {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  transform: scale(1.1); /* Slight scale effect on hover */
+  transform: scale(1.1);
 }
 
 .hamburger {
@@ -77,14 +97,14 @@ body, html {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
-  transition: transform 0.5s ease; /* Smooth hamburger transformation */
+  transition: transform 0.5s ease;
 }
 
 .hamburger .bar {
   width: 30px;
   height: 3px;
   background-color: white;
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth bar transitions */
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .hamburger .bar.active:nth-child(1) {
@@ -109,11 +129,13 @@ body, html {
   width: 200px;
   padding: 20px;
   border-radius: 10px;
-  animation: slideIn 0.4s ease; /* Slide-in animation for the mobile menu */
+  animation: slideIn 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-links.active ul {
   flex-direction: column;
+  padding: 0;
 }
 
 .navbar-links.active ul li {

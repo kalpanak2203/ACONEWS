@@ -6,20 +6,26 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuActive, setMenuActive] = useState(false);
 
+  // Handle scroll event to toggle the navbar style
   const handleScroll = () => {
     setScrolled(window.scrollY > 100);
   };
 
+  // Toggle the menu active state
   const toggleMenu = () => {
     setMenuActive(!menuActive);
   };
 
+  // Close the menu when a link is clicked
   const closeMenu = () => {
-    setMenuActive(false); // Close the menu when a link is clicked
+    setMenuActive(false);
   };
 
   useEffect(() => {
+    // Add scroll event listener
     window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on component unmount
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

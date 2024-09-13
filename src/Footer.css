@@ -62,7 +62,7 @@
   position: absolute;
   width: 0;
   height: 2px;
-  background: #ff5733; /* More vibrant underline color */
+  background: #d12087; /* More vibrant underline color */
   bottom: -2px;
   left: 0;
   transition: width 0.3s ease;
@@ -96,6 +96,10 @@
 /* Footer Bottom */
 .footer-bottom {
   margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px solid rgba(255, 255, 255, 0.4); /* Top line */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4); /* Bottom line */
 }
 
 .footer-bottom p {
