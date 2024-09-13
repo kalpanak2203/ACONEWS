@@ -214,7 +214,7 @@ body, html {
     display: flex;
     width: 70vw; /* Adjusted width for mobile responsiveness */
     right: 0;
-    background-color: #ebaa6e;
+    background: linear-gradient(135deg, #79b2d3, #ffcccb);
     height: 100vh; /* Full viewport height for dropdown */
   }
 }
