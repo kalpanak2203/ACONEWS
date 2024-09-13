@@ -20,7 +20,7 @@
   padding: 12px 15px;
   font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 30px; /* Fully rounded corners */
+  border-radius: 25px; /* Fully rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   outline: none;
   transition: all 0.3s ease-in-out;
@@ -117,6 +117,6 @@
     border-radius: 30px;
     padding: 10px;
     font-size: 14px;
-    display: flex; /* Stack it under the input */
+    /* display: flex; Stack it under the input */
   }
 }
