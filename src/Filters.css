@@ -73,6 +73,7 @@
   .filter-select {
     font-size: 10px; /* Smaller font size */
     padding: 5px; /* Reduced padding */
+    width: 25px;
   }
 }
 
