@@ -29,7 +29,7 @@ const Home = () => {
   // Filter news articles based on search query
   useEffect(() => {
     setFilteredNews(
-      news.filter(article => article.title.toLowerCase().includes(searchQuery.toLowerCase()))
+      news?.filter(article => article.title.toLowerCase().includes(searchQuery.toLowerCase()))
     );
   }, [searchQuery, news]);
 
@@ -48,8 +48,8 @@ const Home = () => {
       <SearchBar onSearch={handleSearch} />
       <Filters onFilterChange={handleFilterChange} />
       <div className="news-container">
-        {filteredNews.length > 0 ? (
-          filteredNews.map((article, index) => (
+        {filteredNews?.length > 0 ? (
+          filteredNews?.map((article, index) => (
             <NewsItem key={index} article={article} />
           ))
         ) : (
