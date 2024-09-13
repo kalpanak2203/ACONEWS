@@ -65,8 +65,9 @@
 
   .filter-group {
     min-width: 50px; /* Reduced minimum width for smaller screens */
-    padding: 8px; /* Reduced padding */
+    padding: 7px; /* Reduced padding */
     min-height: 30px;
+    font-size: 10px;
   }
 
   .filter-select {
