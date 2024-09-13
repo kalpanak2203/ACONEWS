@@ -226,7 +226,7 @@ body, html {
   }
 
   .navbar-links.active {
-    width: 50vw; 
+    width: 50px; 
     height: 60vw;
   }
 
