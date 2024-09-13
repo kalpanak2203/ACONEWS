@@ -98,6 +98,7 @@ body, html {
   cursor: pointer;
   gap: 5px;
   transition: transform 0.5s ease;
+  z-index: 1100; /* Ensure the hamburger menu is above other elements */
 }
 
 .hamburger .bar {
@@ -131,6 +132,7 @@ body, html {
   border-radius: 10px;
   animation: slideIn 0.4s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the dropdown menu appears above other elements */
 }
 
 .navbar-links.active ul {
@@ -167,10 +169,10 @@ body, html {
   }
 
   .navbar-links {
-    display: none;
+    display: none; /* Hide default navbar links on mobile */
   }
 
   .navbar-links.active {
-    display: flex;
+    display: flex; /* Show dropdown menu when active */
   }
 }
