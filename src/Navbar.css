@@ -127,7 +127,8 @@ body, html {
   top: 60px;
   right: 20px;
   background-color: rgba(255, 255, 255, 0.9);
-  width: 200px;
+  width: 100%; /* Ensure the menu is full width on mobile */
+  max-width: 300px; /* Adjust maximum width to fit the screen */
   padding: 20px;
   border-radius: 10px;
   animation: slideIn 0.4s ease;
@@ -174,6 +175,7 @@ body, html {
 
   .navbar-links.active {
     display: flex; /* Show dropdown menu when active */
-    z-index: 1000;
+    width: 100vw; /* Full viewport width */
+    right: 0; /* Align to the right edge of the viewport */
   }
 }
