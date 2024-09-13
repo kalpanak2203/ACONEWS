@@ -123,17 +123,19 @@ body, html {
 .navbar-links.active {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 60px;
-  right: 20px;
+  position: fixed; /* Change to fixed to ensure it stays in view */
+  top: 0;
+  right: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  width: 100%; /* Ensure the menu is full width on mobile */
+  width: 100vw; /* Full viewport width */
   max-width: 300px; /* Adjust maximum width to fit the screen */
   padding: 20px;
   border-radius: 10px;
   animation: slideIn 0.4s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000; /* Ensure the dropdown menu appears above other elements */
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Scroll if content exceeds viewport height */
 }
 
 .navbar-links.active ul {
