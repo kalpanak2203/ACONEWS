@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section about">
           <h2>ACONEWS</h2>
-          <p>Your daily source for the latest news across the world. Stay informed with real-time updates and detailed reports.</p>
+          <p>Your daily source for the latest news !!</p>
         </div>
 
         <div className="footer-section links">

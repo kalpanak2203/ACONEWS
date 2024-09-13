@@ -1,5 +1,6 @@
 .footer {
-  background: linear-gradient(90deg, #f35353, #ffb36d);
+  /* background: linear-gradient(90deg, #f35353, #ffb36d); */
+  background-color: black;
   color: white;
   padding: 40px 20px;
   text-align: center;
@@ -89,7 +90,7 @@
 }
 
 .social-icons a:hover {
-  color: #3f1c0f; /* Darker, vibrant hover color for social icons */
+  color: #a00641; /* Darker, vibrant hover color for social icons */
   transform: scale(1.2);
 }
 
