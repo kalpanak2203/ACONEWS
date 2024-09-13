@@ -20,7 +20,7 @@
   padding: 12px 15px;
   font-size: 16px;
   border: 1px solid #ddd;
-  border-radius: 30px 0 0 30px; /* Rounded corners, left side */
+  border-radius: 30px; /* Fully rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   outline: none;
   transition: all 0.3s ease-in-out;
@@ -45,7 +45,7 @@
   background-color: #00bcd4;
   color: white;
   border: none;
-  border-radius: 0 30px 30px 0; /* Rounded corners, right side */
+  border-radius: 30px; /* Rounded corners */
   cursor: pointer;
   font-size: 16px;
   padding: 12px 20px;
@@ -94,127 +94,30 @@
     width: 100%;
     border-radius: 30px; /* Full rounded corners */
     height: auto;
-    padding: 10px;/* General styling for search bar */
-    .search-bar {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-      flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    }
-    
-    .search-bar form {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      max-width: 800px; /* Restricts width of the form */
-      position: relative;
-    }
-    
-    .search-input {
-      flex: 1;
-      min-width: 200px; /* Ensures a minimum width for the input */
-      padding: 12px 40px; /* Add padding to the right for the search icon */
-      font-size: 16px;
-      border: 1px solid #ddd;
-      border-radius: 30px; /* Rounded corners for a modern look */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-      outline: none;
-      transition: all 0.3s ease-in-out;
-      position: relative; /* For absolute positioning of the search icon */
-    }
-    
-    .search-input::placeholder {
-      color: #aaa;
-      font-size: 16px;
-      transition: color 0.3s ease-in-out;
-    }
-    
-    .search-input:focus {
-      border-color: #00bcd4;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on focus */
-    }
-    
-    .search-input:focus::placeholder {
-      color: transparent; /* Hide placeholder text on focus for a cleaner look */
-    }
-    
-    .search-button {
-      position: absolute;
-      right: 10px; /* Position the button 10px from the right edge */
-      top: 50%;
-      transform: translateY(-50%); /* Center vertically */
-      background-color: #00bcd4;
-      color: white;
-      border: none;
-      border-radius: 50%; /* Make the button circular */
-      cursor: pointer;
-      font-size: 16px;
-      width: 40px; /* Adjust size of the button */
-      height: 40px; /* Adjust size of the button */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    }
-    
-    .search-button::before {
-      content: '🔍'; /* Adds a search icon */
-      font-size: 18px;
-    }
-    
-    .search-button:hover {
-      background-color: #008ba3;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
-    }
-    
-    /* Add animation for button */
-    @keyframes buttonBounce {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-5px); }
-      100% { transform: translateY(0); }
-    }
-    
-    .search-button:hover {
-      animation: buttonBounce 0.3s ease-in-out;
-    }
-    
-    /* Media queries for responsiveness */
-    
-    /* Tablet screens */
-    @media (max-width: 768px) {
-      .search-bar {
-        flex-direction: column; /* Stack items vertically */
-        align-items: stretch;
-      }
-    
-      .search-input {
-        width: 100%;
-        padding-right: 60px; /* Ensure enough space for the button on small screens */
-        border-radius: 30px; /* Full rounded corners */
-        margin-bottom: 10px; /* Adds space between input and button */
-      }
-    
-      .search-button {
-        width: 50px;
-        height: 50px;
-        font-size: 18px;
-        right: 15px;
-      }
-    } 
-    font-size: 14px;
+    padding: 10px;
   }
 }
 
 /* Mobile screens */
 @media (max-width: 480px) {
+  .search-bar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch;
+  }
+
   .search-input {
+    width: 100%;
+    border-radius: 30px; /* Fully rounded */
+    padding: 12px;
     font-size: 14px;
-    padding: 10px 12px;
   }
 
   .search-button {
+    width: 100%;
+    margin-top: 10px; /* Add some space between input and button */
+    border-radius: 30px;
+    padding: 12px;
     font-size: 14px;
-    padding: 8px 5px;
+    display: block; /* Stack it under the input */
   }
 }
