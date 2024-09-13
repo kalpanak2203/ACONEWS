@@ -1,36 +1,88 @@
+/* General styling for filters */
 .filters {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-bottom: 30px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .filter-group {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradient(135deg, #ff6f61, #ffcccb); /* Add a vibrant gradient background */
+  border-radius: 10px; /* Rounded corners for modern look */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+  width: 200px; /* Adjust width for a better fit */
+}
+
+.filter-group:hover {
+  background: linear-gradient(135deg, #ffcccb, #ff6f61); /* Reverse gradient on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .filter-group label {
-  margin-bottom: 5px;
-  font-size: 14px;
+  margin-bottom: 8px;
+  font-size: 16px;
   font-weight: bold;
+  color: #333; /* Darker color for better readability */
 }
 
 .filter-select {
-  width: 160px;
+  width: 100%;
+  max-width: 200px; /* Ensure it doesn't exceed max-width */
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
   font-size: 14px;
-  transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for focus state */
 }
 
 .filter-select:focus {
   outline: none;
   border-color: #00bcd4;
+  box-shadow: 0 0 5px rgba(0, 188, 212, 0.5); /* Subtle shadow on focus */
 }
 
 .filter-select:hover {
   border-color: #008ba3;
+}
+
+/* Responsive Design */
+
+/* Tablet screens */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch; /* Stretch filter groups to full width */
+  }
+
+  .filter-group {
+    width: 100%;
+    margin-bottom: 15px; /* Space between filter groups */
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .filters {
+    gap: 15px;
+  }
+
+  .filter-group {
+    padding: 10px;
+    margin-bottom: 10px; /* Reduced margin for smaller screens */
+  }
+
+  .filter-select {
+    font-size: 12px;
+    padding: 8px;
+  }
 }
