@@ -1,11 +1,9 @@
-/* App.css */
-
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #f5f7fa, #c3cfe2); /* Gradient background */
-  animation: gradientAnimation 15s ease infinite; /* Smooth background animation */
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  animation: gradientAnimation 15s ease infinite; 
   color: #333;
   overflow-x: hidden;
 }
