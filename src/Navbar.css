@@ -177,9 +177,9 @@ body, html {
 
   .navbar-links.active {
     display: flex; /* Show dropdown menu when active */
-    width: 80vw; /* Full viewport width */
+    width: 65vw; /* Full viewport width */
     right: 0; /* Align to the right edge of the viewport */
-    background-color: #ffb36d;
-    height: 120vw;
+    background-color: #ebaa6e;
+    height: 90vw;
   }
 }
