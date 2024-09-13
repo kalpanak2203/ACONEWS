@@ -4,7 +4,7 @@
   justify-content: center;
   gap: 30px;
   margin-bottom: 30px;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  flex-wrap: wrap; /* Allows wrapping on larger screens */
 }
 
 .filter-group {
@@ -63,8 +63,8 @@
   }
 
   .filter-group {
-    width: 150px; /* Reduced width for better fit on mobile screens */
-    min-width: 90px; /* Minimum width to fit smaller screens */
+    width: auto; /* Allow filter groups to be flexible */
+    min-width: 120px; /* Minimum width to fit smaller screens */
     margin: 0; /* Remove bottom margin to align horizontally */
     padding: 10px;
   }
@@ -83,7 +83,7 @@
   }
 
   .filter-group {
-    width: 180px; /* Flexible width for tablets */
+    width: auto; /* Flexible width for tablets */
     min-width: 150px; /* Adjust minimum width for tablets */
   }
 
